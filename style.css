@@ -5,6 +5,12 @@
   }
 body{
     text-align: center;
+    background: rgb(226,225,238);
+    background: linear-gradient(90deg, rgba(226,225,238,1) 0%, rgba(156,113,91,1) 100%, rgba(0,212,255,1) 100%);
+}
+h1{
+  padding: 1rem;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 label{
     display: block;
@@ -17,18 +23,34 @@ input {
     border-radius: 5px;
   }
 
+#sub{
+  background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding around the button text */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    font-size: 16px; /* Button text size */
+}
+#sub:hover{
+   background-color: #2980b9; /* Change background color on hover */
+}
+
 .container{
     width: 100vw;
     height : 100vh;
 
     display: flex;
     justify-content: space-evenly;
-      /* align-items: center; */
+ 
 }
 #form-input{
-    padding: 3rem;
+    padding: 10rem;
 }
 #output{
-    padding: 3rem;
+    padding: 4rem;
   font-size: 1.5rem;
+}
+#myImage{
+  width: 80%;
 }

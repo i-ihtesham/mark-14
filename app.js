@@ -23,19 +23,20 @@ function checkProfitorLoss(initial, stock, current)
     {
         let profit = (current - initial) * stock;
         let profitPercent = ((profit/initial) * 100).toFixed(2);
-        showMessage(`The profit is ${profit} and profit% is ${profitPercent}`)
+        image.src = 'img/profit.png'
+        imageText.textContent = `The profit is ${profit} and profit% is ${profitPercent}`
+        
     }
     else if( current < initial)
     {
         let loss = (initial - current) * stock;
         let lossPercent = ((loss/initial) * 100).toFixed(2);
-        showMessage(`The loss is ${loss} and loss% is ${lossPercent}`)
+        image.src = 'img/loss.png'
+        imageText.textContent = `The loss is ${loss} and loss% is ${lossPercent}`
     }
+        
     else{
-        showMessage("No pain, No gain!!")
+        image.src = 'img/neutral.png'
+        imageText.textContent = `No Pain, No Gain!!`
     }
-}
-function showMessage(msg)
-{
-    output.innerHTML = msg;
 }
