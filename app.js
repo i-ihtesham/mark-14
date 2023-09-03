@@ -3,6 +3,8 @@ let stockQuantity = document.querySelector("#stock-quantity")
 let currentPrice = document.querySelector("#current-price")
 let output = document.querySelector("#output")
 let sub = document.querySelector("#sub")
+let image = document.querySelector("#myImage")
+let imageText = document.querySelector("#imageText")
 
 sub.addEventListener("click", submitEvent)
 

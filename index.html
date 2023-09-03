@@ -9,17 +9,28 @@
 </head>
 <body>
     <h1>Profit or Loss</h1>
-    <label for="input-price">
-        <input type="number" name="" id="input-price" placeholder="Enter the intial price">
-    </label>
-    <label for="stock-quantity">
-        <input type="number" name="" id="stock-quantity" placeholder="Enter the number of stocks">
-    </label>
-    <label for="current-price">
-        <input type="number" name="" id="current-price" placeholder="Enter the current price">
-    </label>
-    <button id="sub">Tell Me!</button>
-    <div id="output"></div>
+    <div class="container">
+        <div id="form-input">
+            <label for="input-price">
+                <input type="number" name="" id="input-price" placeholder="Enter the intial price">
+            </label>
+            <label for="stock-quantity">
+                <input type="number" name="" id="stock-quantity" placeholder="Enter the number of stocks">
+            </label>
+            <label for="current-price">
+                <input type="number" name="" id="current-price" placeholder="Enter the current price">
+            </label>
+            <button id="sub">Tell Me!</button>
+        </div>
+
+        <div id="output">
+            <img id="myImage" src="" alt="">
+            <p id="imageText"></p> 
+        </div>
+    </div>
+    
+    
+    
     <script src="app.js"></script>
 </body>
 </html>

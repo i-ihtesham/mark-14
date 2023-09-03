@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 body{
     text-align: center;
 }
@@ -5,6 +10,25 @@ label{
     display: block;
     padding-bottom: 1rem;
 }
-input{
-    width: 200px;
+input {
+    width: 100%;
+    padding: 12px 21px;
+    margin: 8px 0;
+    border-radius: 5px;
+  }
+
+.container{
+    width: 100vw;
+    height : 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+      /* align-items: center; */
+}
+#form-input{
+    padding: 3rem;
+}
+#output{
+    padding: 3rem;
+  font-size: 1.5rem;
 }
